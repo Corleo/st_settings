@@ -1,0 +1,6 @@
+[
+    { "command": "select_all",    "args": null },
+    { "command": "unexpand_tabs", "args": { "set_translate_tabs": false } },
+    { "command": "set_setting",   "args": { "setting": "tab_size", "value": 4 } },
+    { "command": "expand_tabs",   "args": { "set_translate_tabs": true } }
+]

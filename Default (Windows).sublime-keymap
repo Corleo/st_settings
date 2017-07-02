@@ -1,0 +1,140 @@
+[
+    {
+        "keys": ["pause"],
+        "command": "exec",
+        "args": {
+            "kill": true
+        }
+    },
+    {
+        "keys": ["f12"],
+        "command": "show_panel",
+        "args": {
+            "panel": "output.exec"
+        }
+    },
+    {
+        "keys": ["ctrl+,"],
+        "command": "toggle_comment",
+        "args": {
+            "block": false
+        }
+    },
+    {
+        "keys": ["ctrl+shift+q"],
+        "command": "toggle_comment",
+        "args": {
+            "block": true
+        }
+    },
+    {
+        "_comment": "Capitalize word",
+        "keys": ["ctrl+k", "ctrl+h"],
+        "command": "title_case"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+n"],
+        "command": "fold"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+m"],
+        "command": "unfold"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+,"],
+        "command": "prompt_fold_level"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+."],
+        "command": "prompt_indent_tab_size"
+    },
+    {
+        "keys": ["ctrl+alt+f"],
+        "command": "js_format",
+        "context": [{
+                "key": "selector", "operator": "equal", "operand": "source.javascript"
+            }]
+    },
+    {
+        "keys": ["ctrl+alt+j"],
+        "command": "pretty_json"
+    },
+    {
+        "keys": ["ctrl+alt+m"],
+        "command": "un_pretty_json"
+    },
+    {
+        "_comment": "BracketHighlighter: Go to left bracket",
+        "keys": ["ctrl+.", "ctrl+l"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {
+                    "select": "left"
+                }
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Go to right bracket",
+        "keys": ["ctrl+.", "ctrl+r"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines": true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {
+                    "select": "right"
+                }
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Select tag name of HTML/XML tag (both opening name and closing)",
+        "keys": ["ctrl+.", "ctrl+t"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagnameselect"
+            }
+        }
+    },
+    {
+        "_comment1": "BracketHighlighter: Convert single quote string to double quoted string and vice versa",
+        "_comment2": "BracketHighlighter: Will handle escaping or unescaping quotes within the string",
+        "keys": ["ctrl+.", "ctrl+q"],
+        "command": "bh_key",
+        "args": {
+            "lines": true,
+            "plugin": {
+                "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+                "command": "bh_modules.swapquotes"
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Fold contents between brackets",
+        "keys": ["ctrl+.", "ctrl+f"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.foldbracket"
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Swap brackets with another type",
+        "keys": ["ctrl+.", "ctrl+s"],
+        "command": "swap_brackets"
+    }
+]

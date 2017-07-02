@@ -1,0 +1,46 @@
+[
+    {
+        "caption": "Indentation: Reindent to 2",
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/reindent_to_2.sublime-macro"
+        }
+    },
+    {
+        "caption": "Indentation: Reindent to 3",
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/reindent_to_3.sublime-macro"
+        }
+    },
+    {
+        "caption": "Indentation: Reindent to 4",
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/reindent_to_4.sublime-macro"
+        }
+    },
+    {
+        "caption": "Indentation: Prompt indentation tab size",
+        "command": "prompt_indent_tab_size"
+    },
+    {
+        "caption": "Code Folding: Prompt fold level",
+        "command": "prompt_fold_level"
+    },
+    {
+        "caption": "Line ending: unix (LF only)",
+        "command": "set_line_ending",
+        "args": {"type": "unix"}
+    },
+    {
+        "caption": "Line ending: windows (CRLF)",
+        "command": "set_line_ending",
+        "args": {"type": "windows"}
+    },
+    {
+        "caption": "Line ending: system (whatever the OS uses)",
+        "command": "set_line_ending",
+        "args": {"type": "system"}
+    }
+]

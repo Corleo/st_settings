@@ -1,0 +1,9 @@
+{
+    "parser": "github",
+    "enable_mathjax": true,
+    "enable_highlight": true,
+    "enabled_extensions": [
+        "default",
+        "codehilite(guess_lang=True, pygments_style=github, linenums=True)"
+    ]
+}

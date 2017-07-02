@@ -1,0 +1,261 @@
+{
+	"history":
+	[
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(2,2)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(2,2)"
+			},
+			"key": "5dfb0881e02bad1e2f9e336dd34b06ca",
+			"label": "\\i(2,2)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"stop": "1"
+				},
+				"command": "text_pastry_range",
+				"text": "range 1"
+			},
+			"key": "8901b4fef0730f41bca3fa0d31f4eb2f",
+			"label": "range 1"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "range 1 to 7",
+					"threshold": 3
+				},
+				"command": "text_pastry_insert_text",
+				"text": "range 1 to 7"
+			},
+			"key": "6bfdc5e26053c22269e64d4341315bf6",
+			"label": "range 1 to 7"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "5 5 1"
+				},
+				"command": "text_pastry_step",
+				"text": "5 5 1"
+			},
+			"key": "5ba553f5bbd1d05ff4523bb7c6fc33f4",
+			"label": "5 5 1"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "teste sobre o que vai ser posto",
+					"threshold": 3
+				},
+				"command": "text_pastry_insert_text",
+				"text": "teste sobre o que vai ser posto"
+			},
+			"key": "3f14085321669dce8a17bddc15e17966",
+			"label": "teste sobre o que vai ser posto"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"clipboard": true,
+					"separator": "\\n"
+				},
+				"command": "text_pastry_insert_text",
+				"text": "\\p(\\n)"
+			},
+			"key": "f78a6d8366a120f4c5af029331ba568c",
+			"label": "\\p(\\n)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "5 5 3"
+				},
+				"command": "text_pastry_step",
+				"text": "5 5 3"
+			},
+			"key": "685128a2d8f51cfe8554ff4b2c67d283",
+			"label": "5 5 3"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "5 5"
+				},
+				"command": "text_pastry_step",
+				"text": "5 5"
+			},
+			"key": "3531df85e1852eec136d962a12eada34",
+			"label": "5 5"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(1,-1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(1,-1)"
+			},
+			"key": "ba11daf228765ba91e73190abb4cb873",
+			"label": "\\i(1,-1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"uppercase": true
+				},
+				"command": "text_pastry_uuid",
+				"text": "UUID"
+			},
+			"key": "5a54d9ad87f7c4c1c70c8f05b9515d5a",
+			"label": "UUID"
+		},
+		{
+			"data":
+			{
+				"args": null,
+				"command": "text_pastry_uuid",
+				"text": "uuid"
+			},
+			"key": "ef7c876f00f3acddd00fa671f52d0b1f",
+			"label": "uuid"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i0"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i0"
+			},
+			"key": "2b698f4de9b83fa9de1b60d21eef2340",
+			"label": "\\i0"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(5,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(5,1)"
+			},
+			"key": "18a22e088843afa7c2e6de2a7cf9260b",
+			"label": "\\i(5,1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(4,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(4,1)"
+			},
+			"key": "f6d4c7943e13e380ddaccdadfbe9e3aa",
+			"label": "\\i(4,1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "1"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i"
+			},
+			"key": "1bd7ee1ce72751da4e64129f6d32db41",
+			"label": "\\i"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(8,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(8,1)"
+			},
+			"key": "36b781d45c8d4b61a0691619645274a2",
+			"label": "\\i(8,1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(28,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(28,1)"
+			},
+			"key": "fa9059daa727a8909c2c46441bf41b9c",
+			"label": "\\i(28,1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(2,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(2,1)"
+			},
+			"key": "4371e5dc886922b6aed0b1f9812a2132",
+			"label": "\\i(2,1)"
+		},
+		{
+			"data":
+			{
+				"args":
+				{
+					"text": "\\i(3,1)"
+				},
+				"command": "text_pastry_step",
+				"text": "\\i(3,1)"
+			},
+			"key": "7735ef6baecb898c56ec4bd294b7a59f",
+			"label": "\\i(3,1)"
+		}
+	],
+	"last_command":
+	{
+		"args":
+		{
+			"text": "\\i(3,1)"
+		},
+		"command": "text_pastry_step",
+		"text": "\\i(3,1)"
+	}
+}

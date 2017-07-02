@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "SublimeREPL: Bash",
+        "command": "run_existing_window_command", "args":
+        {
+            "id": "repl_shell",
+            "file": "../User/SublimeREPL/config/Shell/Main.sublime-menu"
+        }
+    }
+]
