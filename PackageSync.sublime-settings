@@ -1,66 +1,39 @@
 {
-    // Decides if the user is asked for providing location to back up to or restore from
-    // If set as true, user is prompted every time he backs up or restores
-    // If set as false, the location specified in settings is used.
-    // If no location has been specified in settings, by default user's desktop is used for backup.
-    "prompt_for_location": true,
-
-    // The file path to use for backing up or restoring only the package list
-    "list_backup_path": "",
-
-    // The path to use for backing up or restoring package list & user settings using a zip file
-    "zip_backup_path": "",
-
-    // The folder path to use for backing up or restoring package list & user settings.
-    "folder_backup_path": "",
-
-    // List of files to ignore when syncing
-    "ignore_files": [
-        "*.DS_Store",
-        "*.last-run",
-        "Package Control.ca-list",
-        "Package Control.ca-bundle",
-        "Package Control.system-ca-bundle",
-        "*.sublime-package",
-        ".gitignore"
-    ],
-
-    // Files to include, as long they do not match a pattern in files_to_ignore
-    "include_files": [
-        "*.sublime-*",
-        "*.tmLanguage",
-        "*.tmTheme",
-        "*.tmPreferences",
-        "*.json",
-        "*.png",
-        "*.txt",
-        "*.py",
-        "*.md"
-    ],
-
-    // Directories to ignore when syncing
-    "ignore_dirs": [
-        "Package Control.cache",
-        "Package Control.ca-cert",
-        ".SublimeREPLHistory",
-        ".git"
-    ],
-
-    // Decides if the existing packages are to be preserved while restoring from a backup
-    // If set as false, existing packages & their settings are removed while restoring from a backup.
-    // If set as true, PackageSync keeps the existing packages intact. However, their settings are
-    // overwritten if the backup contains user-settings for the same package.
-    "preserve_packages": true,
-
-    // Toggle to determine if online syncing is enabled or not
-    "online_sync_enabled": false,
-
-    // Folder to use for syncing the backup with online syncing services
-    // This should be the path to a folder inside the Google Drive, Dropbox or SkyDrive sync folder
-    // Any other online syncing application can be used as well
-    "online_sync_folder": "",
-
-    // The frequency (in seconds) at which PackageSync should poll to see if there are any changes in the local folder
-    // or in the online sync folder
-    "online_sync_interval": 5,
+	"folder_backup_path": "",
+	"ignore_dirs":
+	[
+		"Package Control.cache",
+		"Package Control.ca-cert",
+		".SublimeREPLHistory",
+		".git"
+	],
+	"ignore_files":
+	[
+		"*.DS_Store",
+		"*.last-run",
+		"Package Control.ca-list",
+		"Package Control.ca-bundle",
+		"Package Control.system-ca-bundle",
+		"*.sublime-package",
+		".gitignore"
+	],
+	"include_files":
+	[
+		"*.sublime-*",
+		"*.tmLanguage",
+		"*.tmTheme",
+		"*.tmPreferences",
+		"*.json",
+		"*.png",
+		"*.txt",
+		"*.py",
+		"*.md"
+	],
+	"list_backup_path": "",
+	"online_sync_enabled": false,
+	"online_sync_folder": "",
+	"online_sync_interval": 5,
+	"preserve_packages": true,
+	"prompt_for_location": true,
+	"zip_backup_path": ""
 }

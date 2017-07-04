@@ -9,7 +9,7 @@
             "children":
             [
                 {"command": "repl_open",
-                 "caption": "Bash",
+                 "caption": "Shell",
                  "id": "repl_shell",
                  "mnemonic": "S",
                  "args": {
@@ -24,7 +24,7 @@
                     "cmd_postfix": "\n",
                     "env": {},
                     "suppress_echo": true,
-                    "external_id": "bash",
+                    "external_id": "shell",
                     "syntax": "Packages/Text/Plain text.tmLanguage"
                     }
                 }
