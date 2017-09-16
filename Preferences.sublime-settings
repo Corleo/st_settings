@@ -80,13 +80,11 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 13,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
