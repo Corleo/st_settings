@@ -5,4 +5,5 @@
     // >0: width of markers
     // -1: highlight full line
     "show_in_minimap": -1,
+    "show_markers_on_untracked_file": false
 }

@@ -46,7 +46,7 @@
 
             "python_interpreter": "tcp://my_remote.machine.com:19360"
     */
-    "python_interpreter": "~/miniconda2/envs/webapp/bin/python",
+    "python_interpreter": "~/miniconda2/envs/py3k/bin/python",
 
     /*
         If complete_parameters is true, anaconda will add function and class

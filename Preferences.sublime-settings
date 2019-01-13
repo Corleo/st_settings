@@ -2,16 +2,20 @@
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_delay": 50,
-	"auto_complete_selector": "source - comment",
+	"auto_complete_selector": "meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
 	"auto_complete_size_limit": 4194304,
 	"auto_complete_triggers":
 	[
 		{
 			"characters": "<",
 			"selector": "text.html"
+		},
+		{
+			"characters": "\\,\\<tab>",
+			"selector": "text.tex.latex"
 		}
 	],
-	"auto_complete_with_fields": false,
+	"auto_complete_with_fields": true,
 	"auto_indent": true,
 	"auto_match_enabled": true,
 	"binary_file_patterns":
@@ -46,6 +50,7 @@
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"enable_hexadecimal_encoding": true,
+	"enable_tab_scrolling": true,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": true,
 	"fallback_encoding": "Western (Windows 1252)",
@@ -108,6 +113,7 @@
 	"linux":
 	{
 		"detect_indentation": false,
+		"dpi_scale": 0,
 		"font_face": "UbuntuMono Nerd Font",
 		"font_size": 13
 	},
@@ -132,6 +138,8 @@
 	"scroll_past_end": true,
 	"scroll_speed": 1.2,
 	"shift_tab_unindent": false,
+	"show_encoding": true,
+	"show_errors_inline": true,
 	"show_full_path": true,
 	"show_line_endings": true,
 	"show_panel_on_build": true,
