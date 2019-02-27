@@ -1,0 +1,26 @@
+{
+    "selector": "source.python",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "line_regex": "^\\s*line (\\d+) col (\\d+): ([^\\n]+)",
+
+    "variants": [
+        {
+            "name": "run",
+            "linux": {
+                "shell_cmd": "~/miniconda2/envs/py3k/bin/python -u $file",
+            },
+            "windows": {
+                "shell_cmd": "~/Miniconda3/envs/py3k/python.exe -u $file",
+            },
+        },
+        {
+            "name": "pytest",
+            "linux": {
+                "shell_cmd": "~/miniconda2/envs/py3k/bin/python -u -m pytest -rapP $file",
+            },
+            "windows": {
+                "shell_cmd": "~/Miniconda3/envs/py3k/python.exe -u -m pytest -rapP $file",
+            },
+        },
+    ],
+}
