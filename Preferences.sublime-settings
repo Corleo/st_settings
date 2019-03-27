@@ -34,7 +34,11 @@
 		"*.jar",
 		"*.zip"
 	],
+	"block_caret": false,
 	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 2,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/Monokai Bright Console.tmTheme",
@@ -90,6 +94,7 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
+	"git_diff_target": "HEAD",
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": true,
@@ -153,6 +158,7 @@
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
+	"ui_scale": 1.2,
 	"update_check": false,
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
