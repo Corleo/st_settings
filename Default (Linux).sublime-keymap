@@ -205,4 +205,11 @@
             "to": "scope"
         },
     },
+    {
+        "keys": ["ctrl+k", "ctrl+f"],
+        "command": "prompt_recent_file",
+        "args": {
+            "index": 0
+        },
+    },
 ]

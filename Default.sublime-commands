@@ -42,5 +42,12 @@
         "caption": "Line ending: system (whatever the OS uses)",
         "command": "set_line_ending",
         "args": {"type": "system"}
-    }
+    },
+    {
+        "caption": "Open recently closed file",
+        "command": "prompt_recent_file",
+        "args": {
+            "index": 0
+        }
+    },
 ]
