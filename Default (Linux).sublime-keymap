@@ -73,7 +73,7 @@
     },
     {
         "_comment": "BracketHighlighter: Go to left bracket",
-        "keys": ["ctrl+.", "ctrl+l"],
+        "keys": ["ctrl+.", "ctrl+up"],
         "command": "bh_key",
         "args": {
             "no_outside_adj": null,
@@ -90,7 +90,7 @@
     },
     {
         "_comment": "BracketHighlighter: Go to right bracket",
-        "keys": ["ctrl+.", "ctrl+r"],
+        "keys": ["ctrl+.", "ctrl+down"],
         "command": "bh_key",
         "args": {
             "no_outside_adj": null,
@@ -106,6 +106,34 @@
         }
     },
     {
+        "_comment": "BracketHighlighter: Select the attribute to the right of the cursor (will wrap inside the tag)",
+        "keys": ["ctrl+.", "ctrl+right"],
+        "command": "bh_key",
+        "args":
+        {
+            "plugin":
+            {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagattrselect",
+                "args": {"direction": "right"}
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Select the attribute to the left of the cursor (will wrap inside the tag)",
+        "keys": ["ctrl+.", "ctrl+left"],
+        "command": "bh_key",
+        "args":
+        {
+            "plugin":
+            {
+                "type": ["cfml", "html", "angle"],
+                "command": "bh_modules.tagattrselect",
+                "args": {"direction": "left"}
+            }
+        }
+    },
+    {
         "_comment": "BracketHighlighter: Select tag name of HTML/XML tag (both opening name and closing)",
         "keys": ["ctrl+.", "ctrl+t"],
         "command": "bh_key",
@@ -117,8 +145,7 @@
         }
     },
     {
-        "_comment1": "BracketHighlighter: Convert single quote string to double quoted string and vice versa",
-        "_comment2": "BracketHighlighter: Will handle escaping or unescaping quotes within the string",
+        "_comment": "BracketHighlighter: Convert single quote string to double quoted string and vice versa. Will handle escaping or unescaping quotes within the string",
         "keys": ["ctrl+.", "ctrl+q"],
         "command": "bh_key",
         "args": {
@@ -126,6 +153,21 @@
             "plugin": {
                 "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
                 "command": "bh_modules.swapquotes"
+            }
+        }
+    },
+    {
+        "_comment": "BracketHighlighter: Select text between brackets",
+        "no_outside_adj": null,
+        "keys": ["ctrl+.", "ctrl+s"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
             }
         }
     },
@@ -142,11 +184,25 @@
     },
     {
         "_comment": "BracketHighlighter: Swap brackets with another type",
-        "keys": ["ctrl+.", "ctrl+s"],
+        "keys": ["ctrl+.", "ctrl+e"],
         "command": "swap_brackets"
     },
     {
         "keys": ["f7"],
         "command": "custom_build_system"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+t"],
+        "command": "toggle_setting",
+        "args": {
+            "setting": "word_wrap"
+        },
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+p"],
+        "command": "expand_selection",
+        "args": {
+            "to": "scope"
+        },
     },
 ]
