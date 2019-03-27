@@ -212,4 +212,8 @@
             "index": 0
         },
     },
+    {
+        "keys": ["ctrl+alt+/"],
+        "command": "swap_comment",
+    },
 ]
