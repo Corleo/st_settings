@@ -216,4 +216,8 @@
         "keys": ["ctrl+alt+/"],
         "command": "swap_comment",
     },
+    {
+        "keys": ["ctrl+\\"],
+        "command": "dev_comment",
+    },
 ]
