@@ -50,4 +50,74 @@
             "index": 0
         }
     },
+    {
+        "caption": "ST3: Documentation",
+        "command": "open_url",
+        "args": {
+            "url": "https://www.sublimetext.com/docs/3/"
+        },
+    },
+    {
+        "caption": "ST3: API Reference",
+        "command": "open_url",
+        "args": {
+            "url": "https://www.sublimetext.com/docs/3/api_reference.html"
+        },
+    },
+    {
+        "caption": "ST3: Settings",
+        "command": "open_url",
+        "args": {
+            "url": "https://www.sublimetext.com/docs/3/settings.html"
+        },
+    },
+    {
+        "caption": "ST3: Key Bindings",
+        "command": "open_url",
+        "args": {
+            "url": "https://www.sublimetext.com/docs/3/key_bindings.html"
+        },
+    },
+    {
+        "caption": "ST3: Build Systems",
+        "command": "open_url",
+        "args": {
+            "url": "https://www.sublimetext.com/docs/3/build_systems.html"
+        },
+    },
+    {
+        "caption": "ST3: Commands (Unofficial)",
+        "command": "open_url",
+        "args": {
+            "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/commands.html"
+        },
+    },
+    {
+        "caption": "ST3: Key Bindings (Unofficial)",
+        "command": "open_url",
+        "args": {
+            "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/key_bindings.html"
+        },
+    },
+    {
+        "caption": "ST3: Settings (Unofficial)",
+        "command": "open_url",
+        "args": {
+            "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/settings.html"
+        },
+    },
+    {
+        "caption": "ST3: Build Systems (Unofficial)",
+        "command": "open_url",
+        "args": {
+            "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/build_systems.html"
+        },
+    },
+    {
+        "caption": "Github: Corleo",
+        "command": "open_url",
+        "args": {
+            "url": "https://github.com/Corleo"
+        },
+    },
 ]
