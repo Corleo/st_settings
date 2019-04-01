@@ -120,4 +120,8 @@
             "url": "https://github.com/Corleo"
         },
     },
+    {
+        "caption": "Open new view",
+        "command": "clone_file",
+    },
 ]
