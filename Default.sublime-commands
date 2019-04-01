@@ -124,4 +124,8 @@
         "caption": "Open new view",
         "command": "clone_file",
     },
+    {
+        "caption": "Edit sublime commands",
+        "command": "edit_commands",
+    },
 ]
