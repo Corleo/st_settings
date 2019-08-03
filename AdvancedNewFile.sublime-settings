@@ -1,0 +1,5 @@
+{
+    "rename_default": "<filepath>",
+    "copy_default": "<filepath>",
+    "cut_to_file_default": "<filepath>",
+}
