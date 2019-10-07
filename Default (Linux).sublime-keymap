@@ -109,13 +109,13 @@
         "_comment": "BracketHighlighter: Select the attribute to the right of the cursor (will wrap inside the tag)",
         "keys": ["ctrl+.", "ctrl+right"],
         "command": "bh_key",
-        "args":
-        {
-            "plugin":
-            {
+        "args": {
+            "plugin": {
                 "type": ["cfml", "html", "angle"],
                 "command": "bh_modules.tagattrselect",
-                "args": {"direction": "right"}
+                "args": {
+                    "direction": "right"
+                }
             }
         }
     },
@@ -123,13 +123,13 @@
         "_comment": "BracketHighlighter: Select the attribute to the left of the cursor (will wrap inside the tag)",
         "keys": ["ctrl+.", "ctrl+left"],
         "command": "bh_key",
-        "args":
-        {
-            "plugin":
-            {
+        "args": {
+            "plugin": {
                 "type": ["cfml", "html", "angle"],
                 "command": "bh_modules.tagattrselect",
-                "args": {"direction": "left"}
+                "args": {
+                    "direction": "left"
+                }
             }
         }
     },
@@ -161,11 +161,9 @@
         "no_outside_adj": null,
         "keys": ["ctrl+.", "ctrl+s"],
         "command": "bh_key",
-        "args":
-        {
-            "lines" : true,
-            "plugin":
-            {
+        "args": {
+            "lines": true,
+            "plugin": {
                 "type": ["__all__"],
                 "command": "bh_modules.bracketselect"
             }
@@ -196,27 +194,59 @@
         "command": "toggle_setting",
         "args": {
             "setting": "word_wrap"
-        },
+        }
     },
     {
         "keys": ["ctrl+k", "ctrl+p"],
         "command": "run_macro_file",
-        "args": { "file": "res://Packages/User/macros/expand_selection_to_text_at_line.sublime-macro" },
-
+        "args": {
+            "file": "res://Packages/User/macros/expand_selection_to_text_at_line.sublime-macro"
+        }
     },
     {
         "keys": ["ctrl+k", "ctrl+f"],
         "command": "prompt_recent_file",
         "args": {
             "index": 0
-        },
+        }
     },
     {
         "keys": ["ctrl+alt+/"],
-        "command": "swap_comment",
+        "command": "swap_comment"
     },
     {
         "keys": ["ctrl+\\"],
-        "command": "dev_comment",
+        "command": "dev_comment"
     },
+    {
+        "keys": ["f5"],
+        "command": "find_use"
+    },
+    {
+        "keys": ["f6"],
+        "command": "expand_fqcn"
+    },
+    {
+        "keys": ["shift+f6"],
+        "command": "expand_fqcn",
+        "args": {
+            "leading_separator": true
+        }
+    },
+    {
+        "keys": ["f8"],
+        "command": "goto_definition_scope"
+    },
+    {
+        "keys": ["f10"],
+        "command": "import_namespace"
+    },
+    {
+        "keys": ["ctrl+f10"],
+        "command": "implement"
+    },
+    {
+        "keys": ["ctrl+shift+f10"],
+        "command": "insert_php_constructor_property"
+    }
 ]
