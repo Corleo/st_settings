@@ -1,0 +1,11 @@
+[
+    {
+        "command": "expand_selection",
+        "args": {
+            "to": "brackets"
+        }
+    },
+    {
+        "command": "right_delete"
+    }
+]

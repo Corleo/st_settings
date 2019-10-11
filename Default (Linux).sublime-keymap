@@ -248,5 +248,33 @@
     {
         "keys": ["ctrl+shift+f10"],
         "command": "insert_php_constructor_property"
+    },
+    {
+        "keys": ["ctrl+ç"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/delete_text_in_brackets.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+shift+backspace"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/Default/Delete to BOL.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+shift+delete"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+shift+ç"],
+        "command": "expand_selection",
+        "args": {
+            "to": "scope"
+        }
     }
 ]
