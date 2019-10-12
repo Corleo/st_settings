@@ -9,8 +9,8 @@ Package Control*
 
 # Compare Side-By-Side
 SBSCompare.tmTheme
-SBSCompareTheme.tmTheme
-SBSCompareScheme.sublime-color-scheme
+SBSCompareTheme.*tmTheme
+SBSCompareScheme.*color-scheme
 
 TextPastryHistory.sublime-settings
 Sublimerge Macros.sublime-commands
