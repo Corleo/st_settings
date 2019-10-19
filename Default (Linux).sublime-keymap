@@ -276,5 +276,45 @@
         "args": {
             "to": "scope"
         }
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+s"],
+        "command": "convert_to_snake"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+e"],
+        "command": "convert_to_screaming_snake"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+c"],
+        "command": "convert_to_camel"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+shift+p"],
+        "command": "convert_to_pascal"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+a"],
+        "command": "convert_to_dot"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+y"],
+        "command": "convert_to_dash"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+x"],
+        "command": "convert_to_separate_words"
+    },
+    {
+        "keys": ["ctrl+k","ctrl+q"],
+        "command": "convert_to_slash"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+w"],
+        "command": "convert_to_back_slash"
+    },
+    {
+        "keys": ["ctrl+k", "ctrl+g"],
+        "command": "toggle_snake_camel_pascal"
     }
 ]
