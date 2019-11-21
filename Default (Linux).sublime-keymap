@@ -316,5 +316,37 @@
     {
         "keys": ["ctrl+k", "ctrl+g"],
         "command": "toggle_snake_camel_pascal"
+    },
+    {
+        "keys": ["ctrl+up"],
+        "command": "move_amount",
+        "args": {
+            "by": "lines",
+            "amount": 5,
+            "forward": false
+        }
+    },
+    {
+        "keys": ["ctrl+down"],
+        "command": "move_amount",
+        "args": {
+            "by": "lines",
+            "amount": 5,
+            "forward": true
+        }
+    },
+    {
+        "keys": ["alt+up"],
+        "command": "scroll_lines",
+        "args": {
+            "amount": 7.0
+        }
+    },
+    {
+        "keys": ["alt+down"],
+        "command": "scroll_lines",
+        "args": {
+            "amount": -7.0
+        }
     }
 ]
