@@ -211,6 +211,10 @@
         }
     },
     {
+        "keys": ["ctrl+alt+l"],
+        "command": "quick_switch_tab",
+    },
+    {
         "keys": ["ctrl+alt+/"],
         "command": "swap_comment"
     },

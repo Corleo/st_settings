@@ -51,6 +51,10 @@
         }
     },
     {
+        "caption": "Quick Switch Tabs",
+        "command": "quick_switch_tab",
+    },
+    {
         "caption": "ST3: Documentation",
         "command": "open_url",
         "args": {
