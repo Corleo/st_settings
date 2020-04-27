@@ -51,6 +51,18 @@
         }
     },
     {
+        "caption": "Project: Open",
+        "command": "prompt_open_project_or_workspace",
+    },
+    {
+        "caption": "Project: Clear Items",
+        "command": "clear_recent_projects_and_workspaces",
+    },
+    {
+        "caption": "Project: Open Recent",
+        "command": "prompt_recent_project",
+    },
+    {
         "caption": "Quick Switch Tabs",
         "command": "quick_switch_tab",
     },

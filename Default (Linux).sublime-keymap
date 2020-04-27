@@ -204,6 +204,10 @@
         }
     },
     {
+        "keys": ["ctrl+alt+o"],
+        "command": "prompt_recent_project",
+    },
+    {
         "keys": ["ctrl+k", "ctrl+f"],
         "command": "prompt_recent_file",
         "args": {
