@@ -125,7 +125,7 @@
 		"detect_indentation": false,
 		"dpi_scale": 0,
 		"font_face": "UbuntuMono Nerd Font",
-		"font_size": 13
+		"font_size": 14
 	},
 	"margin": 4,
 	"match_brackets": true,
@@ -156,7 +156,7 @@
 	"show_tab_close_buttons": true,
 	"smart_indent": true,
 	"spell_check": false,
-	"tab_completion": false,
+	"tab_completion": true,
 	"tab_size": 4,
 	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
