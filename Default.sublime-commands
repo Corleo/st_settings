@@ -44,7 +44,11 @@
         "args": {"type": "system"}
     },
     {
-        "caption": "Open recently closed file",
+        "caption": "File: Reopen Last Closed File",
+        "command": "reopen_last_file",
+    },
+    {
+        "caption": "File: Open Recently Closed",
         "command": "prompt_recent_file",
         "args": {
             "index": 0

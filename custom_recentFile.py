@@ -2,70 +2,80 @@ import os
 import json
 import sublime
 import sublime_plugin
+import itertools
 
 
 class PromptRecentFileCommand(sublime_plugin.WindowCommand):
     def run(self, index):
-        self.home = os.path.expandvars('$HOME')
-        opened_files = [v.file_name() for v in self.window.views()]
-
-        # reload session file
-        # how to reload it???
-        st_path = os.path.dirname(sublime.packages_path())
-        session_path = os.path.join(st_path, "Local", "Auto save Session.sublime_session")
-        if not os.path.exists(session_path):
-            session_path = os.path.join(st_path, "Local", "Session.sublime_session")
-
-        # get recent closed files list
-        self.closed_files = [[
+        self.existing_closed_files = self.get_existing_closed_files()
+        self.existing_closed_files.insert(0, [
             'Clear recent files',
-            'Highlight this option to close preview file'
-        ]]
-
-        for file in json.load(open(session_path))['windows'][0]['file_history'][:15]:
-            if file not in opened_files:
-                name = os.path.basename(file)
-                path = file.replace(self.home, '~')
-                self.closed_files.append([name, path])
+            'Highlight this option to close the preview file'
+        ])
 
         self.window.show_quick_panel(
-            self.closed_files,
-            self.on_done,
-            0,
-            index,
-            self.preview_on_select
+            items=self.existing_closed_files,
+            selected_index=index,
+            on_select=self.open_file_on_selected,
+            on_highlight=self.preview_on_highlighted
         )
 
-    def on_done(self, index):
-        this_view = self.window.active_view()
+    def get_existing_closed_files(self):
+        opened_files = [v.file_name() for v in self.window.views()]
 
+        return list(itertools.islice((
+            [os.path.basename(f), f.replace(os.getenv('HOME'), '~')]
+            for f in self.get_closed_files()
+            if os.path.isfile(f) and f not in opened_files
+        ), 15))
+
+    def get_closed_files(self):
+        try:
+            return self.load_session() \
+                .get('windows')[0] \
+                .get('file_history') or []
+        except Exception:
+            return []
+
+    def load_session(self):
+        st_path = os.path.dirname(sublime.packages_path())
+        session_file = os.path.join(st_path, "Local", "Auto Save Session.sublime_session")
+
+        if not os.path.isfile(session_file):
+            session_file = os.path.join(st_path, "Local", "Session.sublime_session")
+
+            if not os.path.isfile(session_file):
+                return None
+
+        return json.load(open(session_file))
+
+    def open_file_on_selected(self, index):
         if index == -1:
             return
 
         elif index == 0:
-            if this_view not in self.window.views():
-                self.close_preview()
+            self.window.run_command("clear_recent_files")
 
-            return self.window.run_command("clear_recent_files")
+        elif self.window.active_view():
+            self.window.open_file(self.existing_closed_files[index][1])
 
-        elif this_view:
-            self.window.open_file(self.closed_files[index][1])
-            # print('Openning file', self.closed_files[index][1])
+        else:
+            return
 
-    def preview_on_select(self, index):
+    def preview_on_highlighted(self, index):
         if index == -1:
-            # keeps the preview file open even with the prompt closed
+            # keeps preview file open even with the prompt closed
             return
 
         elif index == 0:
             self.close_preview()
 
         elif self.window.active_view():
-            self.window.open_file(self.closed_files[index][1], sublime.TRANSIENT)
+            self.window.open_file(self.existing_closed_files[index][1], sublime.TRANSIENT)
+
+        else:
+            return
 
     def close_preview(self):
-        this_view = self.window.active_view()
-
-        if this_view not in self.window.views():
-            # print('Closing preview file', this_view.file_name().replace(self.home, '~'))
+        if self.window.active_view() not in self.window.views_in_group(self.window.active_group()):
             self.window.run_command("close_file")

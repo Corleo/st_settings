@@ -208,7 +208,7 @@
         "command": "prompt_recent_project",
     },
     {
-        "keys": ["ctrl+k", "ctrl+f"],
+        "keys": ["ctrl+alt+k"],
         "command": "prompt_recent_file",
         "args": {
             "index": 0
