@@ -11,9 +11,19 @@ class QuickSwitchTabCommand(sublime_plugin.WindowCommand):
         )
 
     def get_the_names_of_views(self):
+        files = [
+            [os.path.basename(v.file_name()), os.path.dirname(v.file_name())]
+            if v.file_name() is not None
+            else [v.name() or 'untitled', None]
+            for v in self.window.views_in_group(self.window.active_group())
+        ]
+
+        names = list(zip(*files))[0]
+
         return [
-            os.path.basename(v.file_name()) for v in
-            self.window.views_in_group(self.window.active_group())
+            "{:02d} - {}".format(index + 1, item[0]) if names.count(item[0]) == 1 or item[1] is None
+            else "{:02d} - {} ➔ {}".format(index + 1, item[0], item[1].replace(os.getenv('HOME'), '~'))
+            for index, item in enumerate(files)
         ]
 
     def get_active_view_index(self):
