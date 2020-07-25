@@ -280,10 +280,7 @@
     },
     {
         "keys": ["ctrl+shift+ç"],
-        "command": "expand_selection",
-        "args": {
-            "to": "scope"
-        }
+        "command": "expand_selection_to_whitespace",
     },
     {
         "keys": ["ctrl+k", "ctrl+s"],
