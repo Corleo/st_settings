@@ -353,5 +353,9 @@
         "args": {
             "amount": -7.0
         }
+    },
+    {
+        "keys": ["ctrl+shift+."],
+        "command": "plain_tasks_open_url"
     }
 ]
