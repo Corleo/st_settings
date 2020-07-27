@@ -98,7 +98,7 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 14,
+	"font_size": 12,
 	"git_diff_target": "HEAD",
 	"gpu_window_buffer": "auto",
 	"gutter": true,
