@@ -3,9 +3,15 @@
     "preview_math_scope": "text.tex.latex meta.environment.math",
     "preview_math_latex_compile_program": "xelatex",
     "linux" : {
-        "texpath" : "$PATH:$HOME/.local/share/texlive/2018/bin/x86_64-linux",
+        "texpath" : "$PATH:$HOME/.local/share/texlive/2018/bin/x86_64-linux"
     },
     "builder": "traditional",
+    "builder_settings" : {
+        "display_log" : false,
+        "options": [
+            "--shell-escape"
+        ]
+    },
     "viewer": "command",
     "viewer_settings": {
         "linux" : {
