@@ -1,0 +1,23 @@
+{
+    "open_tasks_bullet": "☐", // options: - | ❍ | ❑ | ■ | □ | ☐ | ▪ | ▫ | – | — | ≡ | → | › | [ ]
+    "done_tasks_bullet": "✔", // options: + | ✓ | ✔ | √ | [x]
+    "cancelled_tasks_bullet": "✘", // options: x | ✘ | [-]
+    "before_tasks_bullet_margin": 1,
+    "date_format": "(%y-%m-%d %H:%M)",
+
+    "color_scheme": "Packages/PlainTasks/tasks-monokai.hidden-tmTheme",
+    // other bundled schemes:
+    //   Packages/PlainTasks/tasks-dark.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-eighties-dark.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-gray.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-monokai.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-solarized-dark.hidden-tmTheme
+    //   Packages/PlainTasks/tasks-solarized-light.hidden-tmTheme
+    "draw_indent_guides": true,
+    "line_numbers": true,
+    "gutter": true,
+    "margin": 4,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true
+}
