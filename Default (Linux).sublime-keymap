@@ -283,6 +283,13 @@
         "command": "expand_selection_to_whitespace",
     },
     {
+        "keys": ["ctrl+shift+;"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/copy_expanded_selection_to_whitespace.sublime-macro"
+        }
+    },
+    {
         "keys": ["ctrl+k", "ctrl+s"],
         "command": "convert_to_snake"
     },
