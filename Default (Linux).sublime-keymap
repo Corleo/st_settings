@@ -362,6 +362,19 @@
         }
     },
     {
+        "keys": ["alt+pagedown"],
+        "command": "scroll_width",
+        "args": {
+            "amount": 20
+        }
+    }, {
+        "keys": ["alt+pageup"],
+        "command": "scroll_width",
+        "args": {
+            "amount": -20
+        }
+    },
+    {
         "keys": ["ctrl+shift+."],
         "command": "plain_tasks_open_url"
     }
