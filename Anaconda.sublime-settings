@@ -2,7 +2,7 @@
     "auto_python_builder_enabled": false,
     "complete_parameters": true,
     "complete_all_parameters": false,
-    "auto_formatting": true,
+    "auto_formatting": false,
     "auto_formatting_timeout": 2,  // seconds
     "autoformat_ignore": [
         "E309",
