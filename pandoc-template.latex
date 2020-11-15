@@ -1,0 +1,99 @@
+% Criar link simbólico para o diretório padrão de templates:
+% sudo ln -s ~/.config/sublime-text-3/Packages/User/pandoc-template.latex /usr/share/pandoc/data/templates/sublime-template.latex
+
+
+\documentclass[12pt]{article} % report para usar capítulos
+\usepackage[
+    a4paper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm,
+    nohead,
+    nofoot
+]{geometry}
+
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tocloft}
+
+\usepackage[Lenny]{fncychap}
+\setlength{\headheight}{14.5pt}
+
+
+%%%%%%%%%
+% fonts %
+%%%%%%%%%
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage[brazil]{babel}
+
+    \usepackage[unicode=true,hidelinks]{hyperref}
+    \hypersetup{
+        colorlinks,
+        linkcolor={red!50!black},
+        citecolor={blue!50!black},
+        urlcolor={blue!80!black}
+    }
+
+    \usepackage{fontspec}
+    \setmainfont{Liberation Serif}
+    \setsansfont{Helvetica}
+    \setmonofont{Ubuntu Mono}
+
+
+%%%%%%%%%%%%%%%
+% inline code %
+%%%%%%%%%%%%%%%
+    % change background and font color for inline code
+    \definecolor{bgcolor_inline}{HTML}{fbe5e1}
+    \definecolor{fgcolor_inline}{HTML}{c0341d}
+
+    \let\oldtexttt\texttt
+    \renewcommand{\texttt}[1]{
+        \colorbox{bgcolor_inline}{
+            \textcolor{fgcolor_inline}{\oldtexttt{#1}}
+        }
+    }
+
+
+%%%%%%%%%%%%%%%
+% block quote %
+%%%%%%%%%%%%%%%
+    % create a custom environment to add background color
+    % and indentation to the quotation environment
+    \usepackage{framed}
+    \usepackage{quoting}
+
+    \definecolor{bgcolor}{HTML}{DADADA}
+    \colorlet{shadecolor}{bgcolor}
+    % define a new environment shadedquotation. You can change leftmargin and
+    % rightmargin as you wish.
+    \newenvironment{shadedquotation}{
+        \begin{shaded*}
+        \quoting[leftmargin=1em, rightmargin=0pt, vskip=0pt, font=itshape]
+    }{
+        \endquoting
+        \end{shaded*}
+    }
+
+    \def\quote{\shadedquotation}
+    \def\endquote{\endshadedquotation}
+
+
+\begin{document}
+    % \setcounter{tocdepth}{2}
+    % \tableofcontents
+    % \clearpage
+
+    % \setcounter{tocdepth}{1}
+    % \listoffigures
+    % \clearpage
+
+    % \setcounter{tocdepth}{1}
+    % \listoftables
+    % \clearpage
+
+    $body$
+\end{document}

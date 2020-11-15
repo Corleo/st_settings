@@ -1,0 +1,42 @@
+{
+    "user": {
+        // path to the pandoc binary
+        "pandoc-path": "/usr/bin/pandoc",
+
+        // transformations
+        "transformations": {
+            // @see http://johnmacfarlane.net/pandoc/README.html#creating-a-pdf
+            "PDF": {
+                "scope": {
+                    "text.html": "html",
+                    "text.html.markdown": "markdown"
+                },
+                // use to place the output in the same directory as the curent file
+                // if -o or --output are set in "pandoc-arguments" this is ignored
+                // "out-local": true,
+                "pandoc-arguments": [
+                    "-t",
+                    "pdf",
+                    // "--template=/home/corleo/.local/share/pandoc/template.latex",
+                    "--template=sublime-template.latex",
+                    "--latex-engine=/usr/bin/xelatex",
+                    "--highlight-style=pygments",
+                    // "--output=$file_path/$file_base_name.pdf",
+                ]
+            },
+            "Beamer Slides (PDF)": {
+                "scope": {
+                    "text.html": "html",
+                    "text.html.markdown": "markdown",
+                },
+                // Use the "out-ext" parameter to define a custom output file extension. Commonly used for pdf.
+                "out-ext": "pdf",
+                "pandoc-arguments": [
+                    "-t",
+                    "beamer",
+                    "--latex-engine=/usr/bin/xelatex",
+                ]
+            }
+        }
+    }
+}

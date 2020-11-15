@@ -1,5 +1,5 @@
 {
-    "tex_file_exts": [".tex",".cls"],
+    "tex_file_exts": [".tex",".latex",".cls"],
     "preview_math_scope": "text.tex.latex meta.environment.math",
     "preview_math_latex_compile_program": "xelatex",
     "linux" : {
