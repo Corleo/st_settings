@@ -13,15 +13,13 @@
                 },
                 // use to place the output in the same directory as the curent file
                 // if -o or --output are set in "pandoc-arguments" this is ignored
-                // "out-local": true,
+                "out-local": true,
                 "pandoc-arguments": [
                     "-t",
                     "pdf",
-                    // "--template=/home/corleo/.local/share/pandoc/template.latex",
                     "--template=sublime-template.latex",
                     "--latex-engine=/usr/bin/xelatex",
                     "--highlight-style=pygments",
-                    // "--output=$file_path/$file_base_name.pdf",
                 ]
             },
             "Beamer Slides (PDF)": {

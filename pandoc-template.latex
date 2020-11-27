@@ -8,9 +8,9 @@
     left=2.5cm,
     right=2.5cm,
     top=2.5cm,
-    bottom=2.5cm,
+    bottom=3cm,
     nohead,
-    nofoot
+    % nofoot,
 ]{geometry}
 
 \usepackage{xcolor}
@@ -65,6 +65,11 @@
     % and indentation to the quotation environment
     \usepackage{framed}
     \usepackage{quoting}
+    \usepackage{listings}
+
+    $if(highlighting-macros)$
+    $highlighting-macros$
+    $endif$
 
     \definecolor{bgcolor}{HTML}{DADADA}
     \colorlet{shadecolor}{bgcolor}
@@ -81,6 +86,11 @@
     \def\quote{\shadedquotation}
     \def\endquote{\endshadedquotation}
 
+    \providecommand{\tightlist}{%
+        \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+    }
+
+    \lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
 
 \begin{document}
     % \setcounter{tocdepth}{2}
