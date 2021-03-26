@@ -204,6 +204,13 @@
         }
     },
     {
+        "keys": ["ctrl+shift+."],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/copy_expanded_selection_to_text_at_line.sublime-macro"
+        }
+    },
+    {
         "keys": ["ctrl+alt+o"],
         "command": "prompt_recent_project",
     },
@@ -375,7 +382,7 @@
         }
     },
     {
-        "keys": ["ctrl+shift+."],
+        "keys": ["ctrl+shift+,"],
         "command": "plain_tasks_open_url"
     }
 ]

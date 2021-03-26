@@ -1,0 +1,11 @@
+[
+    {
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/expand_selection_to_text_at_line.sublime-macro"
+        }
+    },
+    {
+        "command": "copy",
+    }
+]
