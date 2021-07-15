@@ -197,20 +197,6 @@
         }
     },
     {
-        "keys": ["ctrl+k", "ctrl+p"],
-        "command": "run_macro_file",
-        "args": {
-            "file": "res://Packages/User/macros/expand_selection_to_text_at_line.sublime-macro"
-        }
-    },
-    {
-        "keys": ["ctrl+shift+."],
-        "command": "run_macro_file",
-        "args": {
-            "file": "res://Packages/User/macros/copy_expanded_selection_to_text_at_line.sublime-macro"
-        }
-    },
-    {
         "keys": ["ctrl+alt+o"],
         "command": "prompt_recent_project",
     },
@@ -265,13 +251,6 @@
         "command": "insert_php_constructor_property"
     },
     {
-        "keys": ["ctrl+ç"],
-        "command": "run_macro_file",
-        "args": {
-            "file": "res://Packages/User/macros/delete_text_in_brackets.sublime-macro"
-        }
-    },
-    {
         "keys": ["ctrl+shift+backspace"],
         "command": "run_macro_file",
         "args": {
@@ -286,14 +265,42 @@
         }
     },
     {
-        "keys": ["ctrl+shift+ç"],
-        "command": "expand_selection_to_whitespace",
+        "keys": ["ctrl+altgr+d"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/delete_text_in_brackets.sublime-macro"
+        }
     },
     {
         "keys": ["ctrl+shift+;"],
+        "command": "expand_selection_to_whitespace",
+    },
+    {
+        "keys": ["ctrl+shift+."],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/expand_selection_to_text_at_line.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+altgr+x"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/copy_expanded_selection_to_text_at_line.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+altgr+c"],
         "command": "run_macro_file",
         "args": {
             "file": "res://Packages/User/macros/copy_expanded_selection_to_whitespace.sublime-macro"
+        }
+    },
+    {
+        "keys": ["ctrl+altgr+v"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/paste_to_expanded_selection_to_whitespace.sublime-macro"
         }
     },
     {
