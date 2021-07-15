@@ -8,15 +8,15 @@
 	[
 		{
 			"characters": "<",
-			"selector": "text.html"
+			"selector": "text.html",
 		},
 		{
 			"characters": "\\,\\<tab>",
-			"selector": "text.tex.latex"
+			"selector": "text.tex.latex",
 		},
 		{
 			"characters": "\\",
-			"selector": "text.tex.latex"
+			"selector": "text.tex.latex",
 		}
 	],
 	"auto_complete_with_fields": true,
@@ -107,7 +107,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -125,7 +125,7 @@
 		"detect_indentation": false,
 		"dpi_scale": 0,
 		"font_face": "UbuntuMono Nerd Font",
-		"font_size": 14
+		"font_size": 14,
 	},
 	"margin": 4,
 	"match_brackets": true,
@@ -172,9 +172,9 @@
 	{
 		"detect_indentation": true,
 		"font_face": "Consolas",
-		"font_size": 11
+		"font_size": 11,
 	},
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": true,
-	"wrap_width": 0
+	"wrap_width": 0,
 }
