@@ -17,4 +17,5 @@
         "E309",
         "E501",
     ],
+    "python_interpreter": "~/miniconda/bin/python",
 }
