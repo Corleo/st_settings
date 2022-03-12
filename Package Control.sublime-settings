@@ -8,11 +8,14 @@
 		"AdvancedNewFile",
 		"AlignTab",
 		"Anaconda",
+		"ApacheConf",
 		"BracketHighlighter",
 		"Case Conversion",
 		"ColorPicker",
 		"Compare Side-By-Side",
 		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"DotENV",
 		"Emmet",
 		"Expand Selection to Whitespace",
 		"GitGutter",
@@ -48,6 +51,6 @@
 		"Themr",
 		"TrailingSpaces",
 		"WordCount",
-		"WordHighlight"
+		"WordHighlight",
 	],
 }
