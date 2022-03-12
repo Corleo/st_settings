@@ -71,63 +71,63 @@
         "command": "quick_switch_tab",
     },
     {
-        "caption": "ST3: Documentation",
+        "caption": "ST: Documentation",
         "command": "open_url",
         "args": {
-            "url": "https://www.sublimetext.com/docs/3/"
+            "url": "https://www.sublimetext.com/docs/"
         },
     },
     {
-        "caption": "ST3: API Reference",
+        "caption": "ST: API Reference",
         "command": "open_url",
         "args": {
-            "url": "https://www.sublimetext.com/docs/3/api_reference.html"
+            "url": "https://www.sublimetext.com/docs/api_reference.html"
         },
     },
     {
-        "caption": "ST3: Settings",
+        "caption": "ST: Settings",
         "command": "open_url",
         "args": {
-            "url": "https://www.sublimetext.com/docs/3/settings.html"
+            "url": "https://www.sublimetext.com/docs/settings.html"
         },
     },
     {
-        "caption": "ST3: Key Bindings",
+        "caption": "ST: Key Bindings",
         "command": "open_url",
         "args": {
-            "url": "https://www.sublimetext.com/docs/3/key_bindings.html"
+            "url": "https://www.sublimetext.com/docs/key_bindings.html"
         },
     },
     {
-        "caption": "ST3: Build Systems",
+        "caption": "ST: Build Systems",
         "command": "open_url",
         "args": {
-            "url": "https://www.sublimetext.com/docs/3/build_systems.html"
+            "url": "https://www.sublimetext.com/docs/build_systems.html"
         },
     },
     {
-        "caption": "ST3: Commands (Unofficial)",
+        "caption": "ST: Commands (Unofficial)",
         "command": "open_url",
         "args": {
             "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/commands.html"
         },
     },
     {
-        "caption": "ST3: Key Bindings (Unofficial)",
+        "caption": "ST: Key Bindings (Unofficial)",
         "command": "open_url",
         "args": {
             "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/key_bindings.html"
         },
     },
     {
-        "caption": "ST3: Settings (Unofficial)",
+        "caption": "ST: Settings (Unofficial)",
         "command": "open_url",
         "args": {
             "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/settings.html"
         },
     },
     {
-        "caption": "ST3: Build Systems (Unofficial)",
+        "caption": "ST: Build Systems (Unofficial)",
         "command": "open_url",
         "args": {
             "url": "https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/build_systems.html"
