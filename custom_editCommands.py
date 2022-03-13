@@ -12,5 +12,7 @@ class EditCommandsCommand(sublime_plugin.WindowCommand):
 
 class EditCommandsListener(sublime_plugin.ViewEventListener):
     def on_load_async(self):
-        if self.view.file_name().endswith('Packages/User/Default.sublime-commands'):
+        file_name = self.view.file_name()
+
+        if isinstance(file_name, str) and file_name.endswith('Packages/User/Default.sublime-commands'):
             self.view.run_command("move_to", {"to": "eof"})
