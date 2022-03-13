@@ -391,5 +391,9 @@
     {
         "keys": ["ctrl+shift+,"],
         "command": "plain_tasks_open_url"
+    },
+    {
+        "keys": ["ctrl+altgr+o"],
+        "command": "open_file_in_path",
     }
 ]
