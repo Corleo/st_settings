@@ -10,8 +10,16 @@ class OpenFileInPathCommand(sublime_plugin.WindowCommand):
 
     FILE_PATTERN = re.compile(r"""
             ^([^:]*)     # file path
-            (?:\:(\d+))? # line if given
-            (?:\:(\d+))? # column if given
+            (?:\:(\d+))? # line number if given
+            (?:\:(\d+))? # column number if given
+        """, re.VERBOSE)
+
+    FTP_PATTERN = re.compile(r"""
+            ^(s?ftp:)  # protocol
+            (?:/+)     # ignore
+            ([^:]*)    # file path
+            (?:\:\d+)? # ignore line number if given
+            (?:\:\d+)? # ignore column number if given
         """, re.VERBOSE)
 
     def run(self):
@@ -24,7 +32,7 @@ class OpenFileInPathCommand(sublime_plugin.WindowCommand):
             self.open_file(selected)
 
     def open_file(self, file):
-        file = file.replace('~', os.getenv('HOME'))
+        file = str(file).replace('~', os.getenv('HOME'))
         filepath, row, col = self.FILE_PATTERN.match(file).groups()
 
         if os.path.isfile(filepath):
@@ -33,5 +41,20 @@ class OpenFileInPathCommand(sublime_plugin.WindowCommand):
             file = f'{filepath}:{row}:{col}'
 
             self.window.open_file(file, sublime.ENCODED_POSITION)
+
+        elif file.startswith(('ftp:/', 'sftp:/')):
+            ftp_protocol, filepath = self.FTP_PATTERN.match(file).groups()
+
+            uid = os.getuid()
+            file = f'/run/user/{uid}/gvfs/{ftp_protocol}host={filepath}'
+
+            if os.path.isfile(file):
+                self.window.open_file(file)
+            else:
+                self.print_error_msg(file)
+
         else:
-            print(f'OpenFileInPath error: A string fornecida não é um caminho de arquivo válido: {file}')
+            self.print_error_msg(file)
+
+    def print_error_msg(self, file):
+        print(f'OpenFileInPath error: Invalid file path: {file}')
