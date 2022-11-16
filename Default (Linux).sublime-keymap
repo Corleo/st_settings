@@ -41,12 +41,18 @@
         "command": "title_case"
     },
     {
-        "keys": ["ctrl+k", "ctrl+n"],
-        "command": "fold"
+        "keys": ["ctrl+shift+["],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/fold.sublime-macro"
+        }
     },
     {
-        "keys": ["ctrl+k", "ctrl+m"],
-        "command": "unfold"
+        "keys": ["ctrl+shift+]"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/unfold.sublime-macro"
+        }
     },
     {
         "keys": ["ctrl+k", "ctrl+,"],
