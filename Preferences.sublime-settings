@@ -90,12 +90,13 @@
 	[
 		".svn",
 		".git",
-		".hg",
-		"CVS"
-	],
-	"index_exclude_patterns": [
-		"*.log",
-		"*.dump",
+        ".hg",
+        "CVS"
+    ],
+    "index_exclude_gitignore": false,
+    "index_exclude_patterns": [
+        "*.log",
+        "*.dump",
 		"*.zip",
 		"*.bz2",
 		"*.tar",
