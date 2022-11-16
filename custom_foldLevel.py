@@ -23,4 +23,6 @@ class FoldLevelCommand(sublime_plugin.TextCommand):
     def run(self, edit, level):
         self.view.substr(sublime.Region(0, self.view.size()))
         self.view.run_command("unfold_all")
-        self.view.run_command("fold_by_level", {"level": level})
+
+        if level > 0:
+            self.view.run_command("fold_by_level", {"level": level})
