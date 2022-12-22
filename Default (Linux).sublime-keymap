@@ -278,6 +278,13 @@
         }
     },
     {
+        "keys": ["ctrl+altgr+b"],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/User/macros/replace_text_in_brackets.sublime-macro"
+        }
+    },
+    {
         "keys": ["ctrl+shift+;"],
         "command": "expand_selection_to_whitespace",
     },
