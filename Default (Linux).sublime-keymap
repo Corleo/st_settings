@@ -375,6 +375,16 @@
         }
     },
     {
+        "keys": ["altgr+up"],
+        "command": "sublimerge_go_up",
+        "context": [{"key": "setting.is_sublimerge_view","operator": "equal","operand": true,"match_all": true}]
+    },
+    {
+        "keys": ["altgr+down"],
+        "command": "sublimerge_go_down",
+        "context": [{"key": "setting.is_sublimerge_view","operator": "equal","operand": true,"match_all": true}]
+    },
+    {
         "keys": ["alt+up"],
         "command": "scroll_lines",
         "args": {
